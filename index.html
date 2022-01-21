@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>One Page Website</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <script>
+    $(window).on("load", function () {
+      $(".loader-wrapper").fadeOut("slow");
+    });
+  </script>
+  <!-- Kaydırma Animasyonu -->
+  <script type="text/javascript">
+    window.addEventListener("scroll", reveal);
+
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if (revealtop < windowheight - revealpoint) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <section id="home">
+    <header>
+      <a href="#"><img src="images/logo.png" alt=""></a>
+      <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Tanıtım</a></li>
+        <li><a href="#product">Ekibimiz</a></li>
+        <li><a href="#pricing">Son Çalışmalarımız</a></li>
+      </ul>
+    </header>
+    <h1 style="align-items: center;"">Duko Peyzaj</h1>
+      <a href="#about" class="scroll-down">
+        <div class="mouse">
+          <span></span>
+        </div>
+        <div class="arrow">
+          <span></span>
+        </div>
+      </a>
+  </section>
+  <section id="about" class="def">
+    <h1 class="yazi">Tanıtım</h1>
+    <br><br><br><br><br><br><br><br><br><br>
+    <h3 class="a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, exercitationem at laborum molestias labore alias provident quaerat autem unde enim veritatis ea magnam nemo reprehenderit consequuntur? Temporibus odit iste similique!
+
+    </h3>
+    <!-- Oklar -->
+    <a href="#product" class="scroll-down">
+      <div class="mouse">
+        <span></span>
+      </div>
+      <div class="arrow">
+        <span></span>
+      </div>
+    </a>
+  </section>
+  <section id="product" class="def">
+    <h1 class="yazi">Ekibimiz</h1>
+    <div class="container container reveal" id="a">
+      <div class="row cards">
+        <div class="col-md-4 col-sm-6">
+          <div class="img-area text-card">
+            <img src="./img/duko1.jpeg" alt="">
+            <div class="img-text">
+              <h3>Dogukan ESEN</h3>
+              <h5>Web Developer</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="img-area text-card">
+            <img src="./img/duko1.jpeg" alt="">
+            <div class="img-text">
+              <h3>Dogukan ESEN</h3>
+              <h5>Web Developer</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="img-area text-card">
+            <img src="./img/duko1.jpeg" alt="">
+            <div class="img-text">
+              <h3>Dogukan ESEN</h3>
+              <h5>Web Developer</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Oklar -->
+    <a href="#pricing" class="scroll-down">
+      <div class="mouse">
+        <span></span>
+      </div>
+      <div class="arrow">
+        <span></span>
+      </div>
+    </a>
+  </section>
+  <section id="pricing" class="def">
+
+    <h1 class="yazi"> Son Çalışmalarımız </h1>
+
+    <!-- Fotolar -->
+    <div class="container container reveal" id="a">
+      <div class="row cards">
+        <div class="col-md-2 col-sm-6">
+          <div class="img-area text-card">
+            <img src="./img/duko1.jpeg" alt="">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <div class="img-area text-card">
+            <img src="./img/duko1.jpeg" alt="">
+            <div class="img-text">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <div class="img-area text-card">
+            <img src="./img/duko1.jpeg" alt="">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <div class="img-area text-card">
+            <img src="./img/duko1.jpeg" alt="">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <div class="img-area text-card">
+            <img src="./img/duko1.jpeg" alt="">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <div class="img-area text-card">
+            <img src="./img/duko1.jpeg" alt="">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <div class="img-area text-card">
+            <img src="./img/duko1.jpeg" alt="">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <div class="img-area text-card">
+            <img src="./img/duko1.jpeg" alt="">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <div class="img-area text-card">
+            <img src="./img/duko1.jpeg" alt="">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <div class="img-area text-card">
+            <img src="./img/duko1.jpeg" alt="">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <div class="img-area text-card">
+            <img src="./img/duko1.jpeg" alt="">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <div class="img-area text-card">
+            <img src="./img/duko1.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Footer -->
+
+    <footer class="bg-light text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #3b5998;"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+    
+          <!-- Twitter -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #55acee;"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+    
+          <!-- Google -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #dd4b39;"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+    
+          <!-- Instagram -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #ac2bac;"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+    
+          <!-- Linkedin -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #0082ca;"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <!-- Github -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #333333;"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:
+        <a class="text-white" href="#s">Dogukan ESEN</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+  </section>
+</body>
+
+</html>

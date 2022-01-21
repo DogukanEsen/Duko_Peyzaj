@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-size: 100%;
+  font-family: sans-serif;
+}
+
+div, section, span, ul, li, a, header{
+  box-sizing: border-box;
+}
+
+/*css reset*/
+
+header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+}
+
+#menu li{
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+}
+
+#menu li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.def{
+  width: 100%;
+  float: left;
+  height: 100vh;
+  position: relative;
+}
+
+#home{
+ background-color: #59405C;
+}
+
+#about{
+   background-color: #ED6663;
+}
+
+#product{
+   background-color: #B52B65;
+}
+
+#pricing{
+   background-color: #3C2C3E;
+}
+
+#contact{
+   background-color: #B52B65;
+}
+
+.yazi{
+  position: absolute;
+  top: 10%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: blue;
+  font-family: 'Dongle', sans-serif;
+}
+
+
+
+.container{
+  margin-top: 10%;
+}
+.img-area{
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+.img-area img{
+  width: 100%;
+  height: auto;
+}
+.img-text,
+.img-area:after{
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+.img-area:after{
+  content: '';
+  height: 100%;
+  top: 0;
+  transition: .5s;
+}
+.img-area:hover:after{
+  background: linear-gradient(to bottom, rgba(199,0,57,.01) 0, rgba(199,0,57,.25) 25%, rgba(199,0,57,.75) 75%, rgba(199,0,57,.95) 100%);
+}
+.img-text{
+  padding: 20px;
+  margin-bottom: 20px;
+  bottom: 0;
+  z-index: 1;
+  transform: translateY(145px);
+  transition: all .5 cubic-bezier(.13,.62,.81,.91);
+}
+.img-text h3{
+  font-family: big john;
+}
+.img-area:hover .img-text{
+  transform: translateY(0);
+}
+/* Ok Animasyonu */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+}
+.hero{
+  width: 100%;
+  height: 100vh;
+  background-color: #59405C
+}
+.scroll-down{
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mouse{
+  width: 2.5rem;
+  height: 5rem;
+  border: 2px solid #fff;
+  border-radius: 2rem;
+  margin-bottom: .5rem;
+}
+.mouse span{
+  width: 1rem;
+  height: 1rem;
+  background-color: #fff;
+  display: block;
+  border-radius: 50%;
+  margin: auto;
+  animation: move-wheel 1s linear infinite;
+}
+.arrow span{
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid transparent;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+  transform: rotate(45deg);
+  animation: arrow-down .5s alternate infinite;
+}
+@keyframes move-wheel{
+  0%{
+      opacity: 0;
+      transform: translateY(-1rem);
+  }
+  100%{
+      opacity: 1;
+      transform: translateY(1rem);
+  }
+}
+@keyframes arrow-down{
+  0%{
+      opacity: 0;
+  }
+  25%{
+      opacity: .25;
+  }
+  50%{
+      opacity: .5;
+  }
+  75%{
+      opacity: .75;
+  }
+  100%{
+      opacity: 1;
+  }
+  
+}
+.scroll-up{
+  position: absolute;
+  /* bottom: 5rem; */
+  height: 700px;
+  left: 50%;
+  transform: translate(50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mouse2{
+  width: 2.5rem;
+  height: 5rem;
+  border: 2px solid #fff;
+  border-radius: 2rem;
+  margin-bottom: .5rem;
+}
+.mouse2 span{
+  width: 1rem;
+  height: 1rem;
+  background-color: #fff;
+  display: block;
+  border-radius: 50%;
+  margin: auto;
+  animation: move-wheel-op 1s linear infinite;
+}
+.arrowup span{
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid transparent;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+  transform: rotate(225deg);
+  animation: arrow-up .5s alternate infinite;
+}
+@keyframes move-wheel-op{
+  0%{
+      opacity: 1;
+      transform: translateY(1rem);
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+}
+@keyframes arrow-up{
+  0%{
+      opacity: 1;
+  }
+  25%{
+      opacity: .75;
+  }
+  50%{
+      opacity: .5;
+  }
+  75%{
+      opacity: .25;
+  }
+  100%{
+      opacity: 0;
+  }
+}
+/* Resim Geçiş */
+section h1{
+      min-height: 100vh;
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      font-size: 60px;
+  }  
+section .containre{
+    margin: 100px;
+  }
+  
+section h2{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+section .cards{
+    display: flex;
+  }
+  
+section .cards .text-card{
+    background: #2696E9;
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  section .cards .text-card h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 900px){
+    section h1{
+      font-size: 40px;
+    }
+  
+    section .cards{
+      flex-direction: column;
+    }
+  }
+  
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+.a{
+    text-align: left;
+
+  }
